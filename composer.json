@@ -1,0 +1,21 @@
+{
+    "name": "shallowr/weather-gaode",
+    "description": "a test weather sdk",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "shallowr",
+            "email": "yao8297890@163.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3",
+        "phpunit/phpunit": "^7.4",
+        "mockery/mockery": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shallowr\\WeatherGaode\\": "src"
+        }
+    }
+}
