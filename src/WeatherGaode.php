@@ -31,7 +31,7 @@ class WeatherGaode
         $this->guzzleOptions = $options;
     }
 
-    public function getWeather($city, $type = 'base', $format = 'json')
+    public function getWeather($city,$type='base',$format='json')
     {
         $url = 'https://restapi.amap.com/v3/weather/weatherInfo';
         // 1. 对 `$format` 与 `$extensions` 参数进行检查，不在范围内的抛出异常。
@@ -61,7 +61,7 @@ class WeatherGaode
             // 4. 返回值根据 $format 返回不同的格式，
             // 当 $format 为 json 时，返回数组格式，否则为 xml。
             return 'json' === $format ? \json_decode($response, true) : $response;
-        } catch (\Exception $e) {
+        }catch(\Exception $e){
             // 5. 当调用出现异常时捕获并抛出，消息为捕获到的异常消息，
             // 并将调用异常作为 $previousException 传入。
             throw new HttpException($e->getMessage(), $e->getCode(), $e);
