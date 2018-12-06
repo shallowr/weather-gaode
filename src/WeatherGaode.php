@@ -1,7 +1,10 @@
 <?php
 
-namespace Shallowr\WeatherGaode;
+/*
+ * this file is test
+ */
 
+namespace Shallowr\WeatherGaode;
 
 use GuzzleHttp\Client;
 use Shallowr\WeatherGaode\Exception\HttpException;

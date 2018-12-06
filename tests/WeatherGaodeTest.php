@@ -1,7 +1,10 @@
 <?php
 
-namespace Shallowr\WeatherGaode\Tests;
+/*
+ * this file is test
+ */
 
+namespace Shallowr\WeatherGaode\Tests;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Psr7\Response;

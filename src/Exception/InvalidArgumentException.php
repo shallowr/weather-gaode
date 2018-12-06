@@ -1,9 +1,11 @@
 <?php
 
-namespace Shallowr\WeatherGaode\Exception;
+/*
+ * this file is test
+ */
 
+namespace Shallowr\WeatherGaode\Exception;
 
 class InvalidArgumentException extends Exception
 {
-
 }
